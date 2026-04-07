@@ -1,0 +1,19 @@
+<form method="POST">
+    {% csrf_token %}
+    <select name="category" id="category">
+        <option value="length">Length</option>
+        <option value="temp">Temperature</option>
+        <option value="currency">Currency</option>
+    </select>
+
+    <input type="number" name="value" placeholder="Enter value" step="any">
+    
+    <input type="text" name="unit_from" placeholder="From (e.g., m, C, USD)">
+    <input type="text" name="unit_to" placeholder="To (e.g., km, F, EUR)">
+
+    <button type="submit">Convert</button>
+</form>
+
+{% if result is not None %}
+    <h3>Result: {{ result|floatformat:2 }}</h3>
+{% endif %}
