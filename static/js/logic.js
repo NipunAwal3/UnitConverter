@@ -15,7 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
         'currency': [
             {value: 'USD', text: 'US Dollar ($)'},
             {value: 'EUR', text: 'Euro (€)'},
-            {value: 'GBP', text: 'British Pound (£)'}
+            {value: 'GBP', text: 'British Pound (£)'},
+            {value: 'NPR', text: 'Nepali Rupees'},
+            {value: 'INR', text: 'Indian Rupees'},
+            {value: 'JPY', text: 'Japanese Yen'}
         ]
     };
 
